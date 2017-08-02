@@ -17,5 +17,5 @@ subset_df$Sub_metering_2<-as.numeric(as.character(subset_df$Sub_metering_2))
 subset_df$Sub_metering_3<-as.numeric(as.character(subset_df$Sub_metering_3))
 
 plot(subset_df$DateTIme,subset_df$Global_active_power,type = "l",ylab = "Global Active Power (kilowatts)",xlab = "")
-dev.copy(png,file="plot2.png",height=600,width=600) ## copying graph into png file of size 480 by 480
+dev.copy(png,file="plot2.png",height=600,width=600) ## copying graph into png file of size 600 by 600
 dev.off() ##closing graphic device
