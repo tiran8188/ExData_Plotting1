@@ -1,7 +1,7 @@
 rm(list = ls())
 library(dplyr)
 
-df<-read.table("household_power_consumption.txt",sep = ";",header = T,stringsAsFactors = F,na.strings = "?")
+df<-read.table("household_power_consumption.txt",sep = ";",header = T,stringsAsFactors = F,na.strings = "?") ## read file into R with seperator ";"
 
 df$Date<-as.Date(df$Date, format = "%d/%m/%Y") ##convert Date column to date format
 
@@ -17,6 +17,6 @@ subset_df$Sub_metering_2<-as.numeric(as.character(subset_df$Sub_metering_2)) ##c
 subset_df$Sub_metering_3<-as.numeric(as.character(subset_df$Sub_metering_3)) ##converting to numerical values 
  
 hist(subset_df$Global_active_power,main = "Global Active Power",xlab = "Global Actuve Power (kilowatts)",ylab = "Frequency",col="Red")
-dev.copy(png,file="plot1.png",height=600,width=600) ## copying graph into png file of size 480 by 480
+dev.copy(png,file="plot1.png",height=600,width=600) ## copying graph into png file of size 600 by 600
 dev.off() ##closing graphic device
 
