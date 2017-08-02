@@ -20,5 +20,5 @@ plot(subset_df$DateTIme,subset_df$Sub_metering_1,type = "l",xlab="",ylab = "Ener
 lines(subset_df$DateTIme,subset_df$Sub_metering_2,type = "l",col="red")     ##add line graph of sub_metering2
 lines(subset_df$DateTIme,subset_df$Sub_metering_3,type = "l",col="blue")
 legend("topright",lty = 1,col = c("black","red","blue"),legend=c("sub_metering_1","sub_metering_2","sub_metering_3"))  ## adding legend
-dev.copy(png,file="plot3.png",height=480,width=480) ## copying graph into png file of size 480 by 480
+dev.copy(png,file="plot3.png",height=600,width=600) ## copying graph into png file of size 480 by 480
 dev.off() ##closing graphic device
