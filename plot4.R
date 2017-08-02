@@ -29,5 +29,5 @@ legend("topright",lty = 1,col = c("black","red","blue"),legend=c("sub_metering_1
 plot(subset_df$DateTIme,subset_df$Voltage,type = "l",ylab = "Voltage",xlab = "datetime") ##plotting 3rd graph 
 
 plot(subset_df$DateTIme,subset_df$Global_reactive_power,type="l",xlab = "datetime",ylab = "Global_Reactive_Power") ## plotting 4th graph
-dev.copy(png,file="plot4.png", height=600,width=600) ## copying graph into png file of size 480 by 480
+dev.copy(png,file="plot4.png", height=600,width=600) ## copying graph into png file of size 600 by 600
 dev.off() ##closing graphic device
